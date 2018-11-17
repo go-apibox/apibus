@@ -15,11 +15,11 @@ import (
 	"syscall"
 	"time"
 
-	"git.quyun.com/apibox/api"
-	"git.quyun.com/apibox/apiclient"
-	"git.quyun.com/apibox/apiproxy"
-	"git.quyun.com/apibox/apisign"
-	"git.quyun.com/apibox/utils"
+	"github.com/go-apibox/api"
+	"github.com/go-apibox/apiclient"
+	"github.com/go-apibox/apiproxy"
+	"github.com/go-apibox/apisign"
+	"github.com/go-apibox/utils"
 	shellquote "github.com/kballard/go-shellquote"
 	"gopkg.in/fsnotify.v1"
 )

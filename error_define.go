@@ -3,7 +3,7 @@
 package apibus
 
 import (
-	"git.quyun.com/apibox/api"
+	"github.com/go-apibox/api"
 )
 
 // error type
