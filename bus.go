@@ -20,7 +20,7 @@ import (
 	"github.com/go-apibox/apiproxy"
 	"github.com/go-apibox/apisign"
 	"github.com/go-apibox/utils"
-	shellquote "github.com/kballard/go-shellquote"
+	"github.com/kballard/go-shellquote"
 	"gopkg.in/fsnotify.v1"
 )
 
@@ -554,7 +554,7 @@ func (bus *Bus) addModule(moduleCode, moduleSock, signKey string) {
 	// 启用apinonce会额外占用内存，而且对内部应用来讲没什么用
 	backend.NonceLength = 0
 	backend.MatchParams = map[string][]string{
-		bus.moduleParamName: []string{moduleCode},
+		bus.moduleParamName: {moduleCode},
 	}
 	backend.DeleteParams = []string{bus.moduleParamName}
 	bus.proxy.AddBackend("module-"+moduleCode, backend)
